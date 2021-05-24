@@ -1,3 +1,5 @@
+@extends('layouts.main')
+@section('content')
 <x-navbar>
 
 </x-navbar>
@@ -53,3 +55,5 @@
 @endforeach
 
 </x-main>
+
+@endsection();

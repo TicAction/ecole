@@ -16,3 +16,6 @@ use App\Http\Controllers\StudieController;
 
 
 Route::resource('/','StudieController');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
