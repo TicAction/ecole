@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +13,10 @@ use App\Http\Controllers\StudieController;
 |
 */
 
+Route::resource('/', 'StudieController');
 
-Route::resource('/','StudieController');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
