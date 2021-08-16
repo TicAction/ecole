@@ -21,13 +21,29 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-        <div class="container">
-          
+    <body >
+    <x-navbar>
 
+    </x-navbar>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <x-exams>
+
+                    </x-exams>
+                </div>
+
+                <div class="col-8">
        {{ $slot}}
                 </div>
 
+                <div class="col-2">
+                    <x-archives>
+
+                    </x-archives>
+
+
+                </div>
        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Studies;
+use App\Models\Planning;
 use Illuminate\Http\Request;
 
-class StudieController extends Controller
+class PlanningController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,7 @@ class StudieController extends Controller
      */
     public function index()
     {
-        $studie = Studies::get();
-       
-
-        return view('studies.index', compact('studie'));
+        //
     }
 
     /**
@@ -44,10 +41,10 @@ class StudieController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Studies  $studies
+     * @param  \App\Models\Planning  $planning
      * @return \Illuminate\Http\Response
      */
-    public function show(Studies $studies)
+    public function show(Planning $planning)
     {
         //
     }
@@ -55,10 +52,10 @@ class StudieController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Studies  $studies
+     * @param  \App\Models\Planning  $planning
      * @return \Illuminate\Http\Response
      */
-    public function edit(Studies $studies)
+    public function edit(Planning $planning)
     {
         //
     }
@@ -67,10 +64,10 @@ class StudieController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Studies  $studies
+     * @param  \App\Models\Planning  $planning
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Studies $studies)
+    public function update(Request $request, Planning $planning)
     {
         //
     }
@@ -78,10 +75,10 @@ class StudieController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Studies  $studies
+     * @param  \App\Models\Planning  $planning
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Studies $studies)
+    public function destroy(Planning $planning)
     {
         //
     }

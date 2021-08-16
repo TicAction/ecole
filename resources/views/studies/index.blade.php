@@ -1,55 +1,59 @@
-<x-navbar>
-
-</x-navbar>
 <x-main>
-<div class="container">
 
-<div class="row">
-    <div class="col-2">
-     Examens à venir
-    </div>
+    <div class="card">
+        <div class="card-body">
+    @foreach($studies as $studie)
 
-    <div class="col-8">
-    
-    <h3 class="text-center">Travaux du ?? septembre au ?? septembre</h1>
-        <table class="table table-striped">
-       <tr>
-       <th>Je suis le header</th>
-            <td>Je suis a coté. du header</td>
-       </tr>
+    <h3 class="text-center" style="background-color: #cbd5e0">Travaux du  {{Carbon\Carbon::parse($studie->start_date)->translatedFormat('d F')}} au  {{Carbon\Carbon::parse($studie->end_date)->translatedFormat('d F')}}</h3>
+
+        <table class="table ">
+
         <tr>
-        <th>Je suis le header</th>
-            <td>Je suis a coté. du header</td>
+                <th>Lecture:</th>
+                <td>{{$studie->reading}}</td>
         </tr>
-            
+        <tr>
+                <th>Vocabulaire:</th>
+                <td>{{$studie->vocabulary}}</td>
+        </tr>
+        <tr>
+                <th>Grammaire:</th>
+                <td>{{$studie->grammary}}</td>
+        </tr>
+        <tr>
+                <th>Conjugaison:</th>
+                <td>{{$studie->verbs}}</td>
+        </tr>
+        <tr>
+                <th>Mathématique:</th>
+                <td>{{$studie->math}}</td>
+        </tr>
+        <tr>
+                <th>Exposé Oral:</th>
+                <td>{{$studie->oral}}</td>
+        </tr>
+        <tr>
+                <th>Univers Social:</th>
+                <td>{{$studie->history}}</td>
+        </tr>
+        <tr>
+                <th>Science:</th>
+                <td>{{$studie->science}}</td>
+        </tr>
+        <tr>
+                <th>Anglais:</th>
+                <td>{{$studie->english}}</td>
+        </tr>
+        <tr>
+                <th>Autres:</th>
+                <td>{{$studie->other}}</td>
+        </tr>
+
         </table>
 
-         </div>
-
-        
-    <div class="col-2">
-    Archive de travaux
-    <ul>
-        <li>
-        Semaine 1  
-        </li>
-        <li>
-        Semaine 2
-        </li>
-        <li>
-        Semaine 3  
-        </li>
-        <li>
-        Semaine 4  
-        </li>
-    </ul>
-       
+        @endforeach
     </div>
-</div>
+        </div>
 
-</div>
-@foreach($studie as $studie)
-{{dump($studie)}}
-@endforeach
 
 </x-main>

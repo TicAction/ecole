@@ -14,7 +14,7 @@ class AddPublishToStudies extends Migration
     public function up()
     {
         Schema::table('studies', function (Blueprint $table) {
-            $table->boolean('publish')->default('0');
+            $table->string('publish');
         });
     }
 
@@ -26,7 +26,7 @@ class AddPublishToStudies extends Migration
     public function down()
     {
         Schema::table('studies', function (Blueprint $table) {
-            $table->boolean('publish');
+            $table->string('publish');
         });
     }
 }
