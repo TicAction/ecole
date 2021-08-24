@@ -37,7 +37,7 @@ class StudyRequest extends FormRequest
             'science'=>'nullable',
             'autre'=>'nullable',
             'week'=>'required',
-            'publish'=>'required'
+            'publish'=>'nullable'
         ];
     }
 }

@@ -4,6 +4,7 @@
         <div class="card-body">
     @foreach($studies as $studie)
 
+
     <h3 class="text-center" style="background-color: #cbd5e0">Travaux du  {{Carbon\Carbon::parse($studie->start_date)->translatedFormat('d F')}} au  {{Carbon\Carbon::parse($studie->end_date)->translatedFormat('d F')}}</h3>
 
         <table class="table ">
@@ -12,6 +13,7 @@
                 <th>Lecture:</th>
                 <td>{{$studie->reading}}</td>
         </tr>
+
         <tr>
                 <th>Vocabulaire:</th>
                 <td>{{$studie->vocabulary}}</td>

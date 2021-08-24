@@ -24,7 +24,7 @@ class Exams extends Component
      */
     public function render()
     {
-        $exams = Exam::where('date_exam','>=',date('Y-m-d'))->get();
+        $exams = Exam::where('date_exam','>=',date('Y-m-d'))->orderBy('date_exam','ASC')->get();
         return view('components.exams',compact('exams'));
     }
 }

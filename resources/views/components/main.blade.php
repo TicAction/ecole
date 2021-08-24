@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <link rel="icon" href="{{ asset('css/img/favicon.ico') }}" type="image/x-icon">
+        <title>Classe de M. Ghislain</title>
+
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
         <!-- Fonts -->
@@ -27,17 +30,17 @@
     </x-navbar>
         <div class="container">
             <div class="row">
-                <div class="col-2">
+                <div class="col-lg-2 col-md-2 col-sm-12">
                     <x-exams>
 
                     </x-exams>
                 </div>
 
-                <div class="col-8">
+                <div class="col-lg-8 col-md-8 col-sm-12">
        {{ $slot}}
                 </div>
 
-                <div class="col-2">
+                <div class="col-lg-2 col-md-2 col-sm-12">
                     <x-archives>
 
                     </x-archives>
