@@ -13,10 +13,11 @@
 
                   @include('include/message')
                     <h1 class="text-center text-2xl">Liste des devoirs et leçons de l'année</h1>
+
                     <table class="table table-striped">
                         <tr>
                             <th>Semaine</th>
-                            <th>Date de départ</th>
+                            <th class="text-center">Date de début et fin</th>
                             <th>Modifier</th>
                             <th>Voir</th>
                             <th>Supprimer</th>
@@ -25,7 +26,11 @@
                         @foreach($studies as $studie)
                             <tr>
                                 <td>{{$studie->week}}</td>
-                                <td>{{Carbon\Carbon::parse($studie->start_date)->translatedFormat('d-F-Y')}}</td>
+                                <td>Du
+                                    {{Carbon\Carbon::parse($studie->start_date)->translatedFormat('d-F')}}
+                                   Au
+                                    {{Carbon\Carbon::parse($studie->end_date)->translatedFormat('d-F')}}
+                                </td>
                                 <td><button class="btn btn-primary"><a href="{{route('admin.edit',$studie->id)}}">Éditer</a></button></td>
                                 <td><button class="btn btn-success"><a href="{{route('admin.show',$studie->id)}}">Voir</a></button></td>
                                 <td>
@@ -37,10 +42,15 @@
                                     </form>
                                 </td>
                                 <td>
-                                    <input type="checkbox" , {{$studie->publish === 'on'? 'checked' : ''}}
+
+                                    <input type="checkbox" {{$studie->publish === 'on'? 'checked' : ''}}
+
+
+                                </td>
 
                                 </td>
                             </tr>
+
                         @endforeach
                     </table>
                 </div>

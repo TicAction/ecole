@@ -8,7 +8,9 @@
 
                     <li>
                         <a href="{{route('parent.exam',[$exam->id])}}">Le {{Carbon\Carbon::parse($exam->date_exam)->translatedFormat('d F')}}</a>
+
                     </li>
+                <p style="color: #a0aec0;"><small>{{$exam->notion}}</small></p>
 
                 @endforeach
             </ul>
