@@ -10,7 +10,7 @@ class Admin extends Model
     use HasFactory;
     protected $fillable =[
         'start_date','end_date', 'reading','vocabulary',
-        'grammary', 'verbs', 'math', 'english', 'oral', 'history', 'science', 'autre','publish','week'
+        'grammary', 'verbs', 'math', 'english', 'oral', 'history', 'science', 'autre','publish','week','mathwork','frenchwork'
     ];
     protected $dates=['start_date','end_date'];
 

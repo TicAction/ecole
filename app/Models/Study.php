@@ -11,8 +11,7 @@ class Study extends Model
 
     protected $fillable =[
         'start_date','end_date', 'reading','vocabulary',
-        'grammary', 'verbs', 'math', 'english', 'oral', 'history', 'science', 'other','publish','week'
-    ];
+        'grammary', 'verbs', 'math', 'english', 'oral', 'history', 'science', 'other','publish','week','mathwork','frenchwork'];
     protected $dates=['start_date','end_date'];
 
 }

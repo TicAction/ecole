@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Observation;
+use App\Models\Kid;
 use Illuminate\Http\Request;
 
 class ObservationController extends Controller
@@ -14,7 +15,8 @@ class ObservationController extends Controller
      */
     public function index()
     {
-        //
+        $observations = Observation::all();
+        return view('observations.index',compact('observations'));
     }
 
     /**
@@ -24,7 +26,9 @@ class ObservationController extends Controller
      */
     public function create()
     {
-        //
+        $kids =Kid::orderBy('lastname','asc')->get();
+
+        return view('observations.create', compact('kids'));
     }
 
     /**
@@ -35,7 +39,15 @@ class ObservationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        Observation::create([
+            'observation_date'=> request('observation_date'),
+            'content'=> request('content'),
+            'kid_id'=> request('kid_id'),
+            'period'=> request('period'),
+        ]);
+
+        return redirect('kid');
     }
 
     /**
@@ -57,7 +69,7 @@ class ObservationController extends Controller
      */
     public function edit(Observation $observation)
     {
-        //
+        return view('observations.edit',compact('observation'));
     }
 
     /**
@@ -69,7 +81,14 @@ class ObservationController extends Controller
      */
     public function update(Request $request, Observation $observation)
     {
-        //
+        Observation::update([
+            'observation_date'=> request('observation_date'),
+            'content'=> request('content'),
+            'kid_id'=> request('kid_id'),
+            'period'=> request('period'),
+        ]);
+
+        return redirect('kid');
     }
 
     /**

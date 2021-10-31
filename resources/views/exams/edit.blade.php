@@ -81,7 +81,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <strong>Description</strong>
-                                        <textarea name="description" id="description" cols="125" rows="10" >{{ $exam->description }}</textarea>
+                                        <textarea name="description" id="description" cols="125" rows="10" class="form-control ckeditor" >{{ $exam->description }}</textarea>
                                     </div>
                                 </div>
                             </div>

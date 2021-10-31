@@ -22,6 +22,8 @@ Route::get('parent/{exam}','PexamController@show')->name('parent.exam');
 //admin url
 Route::resource('admin','AdminController')->middleware('auth');
 Route::resource('exam','ExamController')->middleware('auth');
+Route::resource('kid','KidController')->middleware('auth');
+Route::resource('observation','ObservationController')->middleware('auth');
 
 
 require __DIR__.'/auth.php';

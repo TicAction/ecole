@@ -21,7 +21,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Date start</strong>
-                        <input type="date" name="start_date" value="{{$study->start_date->format('Y-m-d')}}" class="form-control" placeholder="">
+                        <input type="date" name="start_date" value="{{$study->start_date->format('Y-m-d')}}" class="form-control ckeditor" placeholder="">
                 </div>
                 </div>
             </div>
@@ -116,12 +116,28 @@
             </div>
         </div>
 
+        <div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Travail Mathématique</strong>
+                    <textarea name="mathwork" id="mathwork" cols="30" rows="3" class="form-control ckeditor">{{$study->mathwork}}</textarea>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Travail de français</strong>
+                    <textarea name="frenchwork" id="frenchwork" cols="30" rows="3" class="form-control ckeditor">{{$study->frenchwork}}</textarea>
+                </div>
+            </div>
+        </div>
 
         <div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Autres</strong>
-                    <input type="text" name="other" value="{{$study->other}}" class="form-control" placeholder="">
+                    <textarea name="other" id="other" cols="30" rows="10" class="form-control ckeditor">{{$study->other}}</textarea>
                 </div>
             </div>
         </div>
@@ -168,4 +184,6 @@
         </div>
     </form>
         <div class="text-center"><a href="{{url('admin')}}"><button class="btn btn-success">Retour</button></a></div>
+        <script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
+
 </x-app-layout>

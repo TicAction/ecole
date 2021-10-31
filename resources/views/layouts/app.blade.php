@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -35,5 +36,6 @@
             </main>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
+        <script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
     </body>
 </html>

@@ -29,7 +29,7 @@
                 </th>
             </tr>
             <tr>
-                <td>{{$exam->description}}</td>
+                <td>{!! $exam->description !!}</td>
             </tr>
         </table>
         <div class="text-center"><a href="{{url('/')}}"><button class="btn btn-success">Retour</button></a></div>

@@ -14,7 +14,9 @@ class KidController extends Controller
      */
     public function index()
     {
-        //
+        $kids = Kid::orderBy('lastname','Asc')->get();
+
+        return view('kids.index',compact('kids'));
     }
 
     /**
@@ -24,7 +26,7 @@ class KidController extends Controller
      */
     public function create()
     {
-        //
+        return view('kids.create');
     }
 
     /**
@@ -35,7 +37,8 @@ class KidController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Kid::create($request->all());
+        return redirect('kid')->with('success','La nouvelle observation a été créée avec succés');
     }
 
     /**
@@ -44,9 +47,10 @@ class KidController extends Controller
      * @param  \App\Models\Kid  $kid
      * @return \Illuminate\Http\Response
      */
-    public function show(Kid $kid)
+    public function show(kid $kid)
     {
-        //
+
+        return view('kids.show',compact('kid'));
     }
 
     /**
@@ -57,7 +61,9 @@ class KidController extends Controller
      */
     public function edit(Kid $kid)
     {
-        //
+
+        return view('kids.edit',compact('kid'));
+
     }
 
     /**
@@ -69,8 +75,8 @@ class KidController extends Controller
      */
     public function update(Request $request, Kid $kid)
     {
-        //
-    }
+        $kid->update($request->all());
+        return redirect('kid')->with('success','Modifier avec succès');    }
 
     /**
      * Remove the specified resource from storage.
@@ -80,6 +86,7 @@ class KidController extends Controller
      */
     public function destroy(Kid $kid)
     {
-        //
+        $kid->delete();
+        return redirect('kid')->with('success', "L'élève a bien été effacé");
     }
 }

@@ -46,9 +46,25 @@
                 <th>Anglais:</th>
                 <td>{{$studie->english}}</td>
         </tr>
+            <tr>
+            <tr>
+                <th colspan="2" class="text-center"><h3 style="background-color: #cbd5e0">Travaux de la semaine</h3></th>
+            </tr>            </tr>
+            <tr>
+                <th>Travaux de mathématique :</th>
+                <td>{!! $studie->mathwork !!}</td>
+            </tr>
+            <tr>
+                <th>Travaux de français :</th>
+                <td>{!! $studie->frenchwork !!}</td>
+            </tr>
+
+            <tr>
+                <th colspan="4" class="text-center"><h3 style="background-color: #cbd5e0">Autres</h3></th>
+            </tr>
         <tr>
-                <th>Autres:</th>
-                <td>{{$studie->other}}</td>
+
+                <td colspan="4">{!! $studie->other !!}</td>
         </tr>
 
         </table>

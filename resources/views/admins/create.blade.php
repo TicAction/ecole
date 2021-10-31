@@ -119,13 +119,29 @@
             </div>
         </div>
     </div>
+    <div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Travail mathématique</strong>
+                <textarea name="mathwork" id="mathwork" cols="30" rows="3" class="form-control ckeditor"></textarea>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Travail français</strong>
+                <textarea name="frenchwork" id="frenchwork" cols="30" rows="3" class="form-control ckeditor"></textarea>
 
+            </div>
+        </div>
+    </div>
 
     <div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Autres</strong>
-                <input type="text" name="other" class="form-control" placeholder="">
+                <textarea name="other" id="other" cols="30" rows="10" class="form-control ckeditor"></textarea>
             </div>
         </div>
     </div>
@@ -166,6 +182,6 @@
             </div>
         </div>
     </div>
-
+{{--    <script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>--}}
 
 </x-app-layout>

@@ -3,6 +3,7 @@
     <a class="navbar-brand" href="#">Classe de M. Ghislain</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+
       <li class="nav-item active">
         <a href="{{route('devoir')}}" class="text-white">Accueil</a>
       </li>

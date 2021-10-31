@@ -14,4 +14,8 @@ class Kid extends Model
     {
         return $this->hasMany(Observation::class);
     }
+    public function getFullNameAttribute()
+    {
+        return "{$this->firstname} {$this->lastname}";
+    }
 }

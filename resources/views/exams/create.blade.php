@@ -79,7 +79,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <strong>Description</strong>
-                                        <textarea name="description" id="" cols="125" rows="10" placeholder="Écrire une courte description"></textarea>
+                                        <textarea name="description" id="" cols="125" rows="10" placeholder="Écrire une courte description" class="form-control ckeditor"></textarea>
                                     </div>
                                 </div>
                             </div>

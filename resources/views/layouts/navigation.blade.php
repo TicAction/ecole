@@ -32,6 +32,16 @@
                         {{ __('Nouvelle évaluation') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('kid.index')" >
+                        {{ __('Liste des élèves') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('observation.create')" >
+                        {{ __('Nouvelle observation') }}
+                    </x-nav-link>
+                </div>
 
             </div>
 

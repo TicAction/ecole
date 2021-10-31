@@ -52,17 +52,9 @@
         </tr>
         <tr>
             <th>Autres:</th>
-            <td>{!! $study->other !!}</td>
+            <td>{{$study->other}}</td>
         </tr>
 
-        <tr>
-            <th>Autres:</th>
-            <td>{!! $study->mathwork !!}</td>
-        </tr>
-        <tr>
-            <th>Autres:</th>
-            <td>{!! $study->frenchwork !!}</td>
-        </tr>
     </table>
 
                     <a href="{{url('admin')}}"><button class="btn btn-success">Retour</button></a>
