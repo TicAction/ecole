@@ -31,10 +31,10 @@
                                    Au
                                     {{Carbon\Carbon::parse($studie->end_date)->translatedFormat('d-F')}}
                                 </td>
-                                <td><button class="btn btn-primary"><a href="{{route('admin.edit',$studie->id)}}">Éditer</a></button></td>
-                                <td><button class="btn btn-success"><a href="{{route('admin.show',$studie->id)}}">Voir</a></button></td>
+                                <td><button class="btn btn-primary"><a href="{{route('admins.edit',$studie->id)}}">Éditer</a></button></td>
+                                <td><button class="btn btn-success"><a href="{{route('admins.show',$studie->id)}}">Voir</a></button></td>
                                 <td>
-                                    <form action="{{ route('admin.destroy',$studie->id) }}" method="POST">
+                                    <form action="{{ route('admins.destroy',$studie->id) }}" method="POST">
 
                                         @csrf
                                         @method('DELETE')

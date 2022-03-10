@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kid;
 use App\Models\Planning;
 use Illuminate\Http\Request;
+use phpDocumentor\Reflection\Types\Compound;
 
 class PlanningController extends Controller
 {
@@ -14,7 +16,9 @@ class PlanningController extends Controller
      */
     public function index()
     {
-        //
+        $plannings = Planning::all();
+
+        return view('plannings.index',compact('plannings'));
     }
 
     /**
@@ -24,7 +28,10 @@ class PlanningController extends Controller
      */
     public function create()
     {
-        //
+        $kids = Kid::all();
+
+
+        return view('plannings.create',compact('kids'));
     }
 
     /**
@@ -35,7 +42,20 @@ class PlanningController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $services = $request->services;
+        $kid_id = $request->kid_id;
+        
+       for($i=0; $i<count($kid_id);$i++)
+       {
+            dd($i);
+           $data=[
+               'services'=> $services[$i],
+               'kid_id'=>  $kid_id[$i],
+               ];
+
+       }
+            return dd($data);
     }
 
     /**

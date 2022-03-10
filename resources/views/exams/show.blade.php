@@ -17,7 +17,7 @@
                         </div>
                     @endif
 
-                    <h1 class="text-center">Liste des évaluation à venir</h1>
+                    <h1 class="text-center">Description de l'évaluation</h1>
                     <table class="table table-striped">
                         <tr>
                             <th>Date prévue</th>

@@ -21,6 +21,7 @@
                     <table class="table table-striped">
                         <tr>
                             <th>Date prévue</th>
+                            <th>Date inscrit</th>
                             <th>Nom de l'examen</th>
                             <th>Matière</th>
                             <th>Manuel</th>
@@ -31,6 +32,7 @@
                         @foreach($exams as $exam)
                             <tr>
                                 <td>{{Carbon\Carbon::parse($exam->date_exam)->translatedFormat('d-F-Y')}}</td>
+                                <td>{{Carbon\Carbon::parse($exam->created_at)->translatedFormat('d-F-Y')}}</td>
                                 <td>{{$exam->name}}</td>
                                 <td>{{$exam->notion}}</td>
                                 <td>{{$exam->manuel}}</td>

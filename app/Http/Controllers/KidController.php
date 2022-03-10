@@ -14,7 +14,7 @@ class KidController extends Controller
      */
     public function index()
     {
-        $kids = Kid::orderBy('lastname','Asc')->get();
+        $kids = Kid::orderBy('lastname','asc')->get();
 
         return view('kids.index',compact('kids'));
     }
@@ -50,6 +50,7 @@ class KidController extends Controller
     public function show(kid $kid)
     {
 
+
         return view('kids.show',compact('kid'));
     }
 
@@ -76,7 +77,8 @@ class KidController extends Controller
     public function update(Request $request, Kid $kid)
     {
         $kid->update($request->all());
-        return redirect('kid')->with('success','Modifier avec succès');    }
+        return redirect('kid')->with('success','Modifier avec succès');
+    }
 
     /**
      * Remove the specified resource from storage.

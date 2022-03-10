@@ -26,7 +26,7 @@ class ObservationController extends Controller
      */
     public function create()
     {
-        $kids =Kid::orderBy('lastname','asc')->get();
+        $kids =Kid::all();
 
         return view('observations.create', compact('kids'));
     }

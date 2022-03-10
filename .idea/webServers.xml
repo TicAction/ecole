@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="6a74d604-de28-4021-bff5-8f9d8f080c4a" name="2021" url="http://ftp.edu-gestion.ca">
-        <fileTransfer host="ftp.edu-gestion.ca" port="21" rootFolder="/2021-2022">
+      <webServer id="6a74d604-de28-4021-bff5-8f9d8f080c4a" name="planethoster" url="http://node8-ca.n0c.com">
+        <fileTransfer host="node8-ca.n0c.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

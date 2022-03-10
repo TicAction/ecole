@@ -1,0 +1,100 @@
+[16-Aug-2021 18:51:40 UTC] PHP Warning:  require(/home/eduge765/public_html/2021-2022/vendor/composer/../phpunit/phpunit/src/Framework/Assert/Functions.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 18:51:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduge765/public_html/2021-2022/vendor/composer/../phpunit/phpunit/src/Framework/Assert/Functions.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php(61): composerRequire91546f85509c82b88b9e28b7829ddb4c()
+#1 /home/eduge765/public_html/2021-2022/vendor/autoload.php(7): ComposerAutoloaderInit91546f85509c82b88b9e28b7829ddb4c::getLoader()
+#2 /home/eduge765/public_html/2021-2022/public/index.php(34): require('/home/eduge765/...')
+#3 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 18:52:27 UTC] PHP Warning:  require(/home/eduge765/public_html/2021-2022/vendor/composer/../phpunit/phpunit/src/Framework/Assert/Functions.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 18:52:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduge765/public_html/2021-2022/vendor/composer/../phpunit/phpunit/src/Framework/Assert/Functions.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php(61): composerRequire91546f85509c82b88b9e28b7829ddb4c()
+#1 /home/eduge765/public_html/2021-2022/vendor/autoload.php(7): ComposerAutoloaderInit91546f85509c82b88b9e28b7829ddb4c::getLoader()
+#2 /home/eduge765/public_html/2021-2022/public/index.php(34): require('/home/eduge765/...')
+#3 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 18:52:46 UTC] PHP Warning:  require(/home/eduge765/public_html/2021-2022/vendor/composer/../phpunit/phpunit/src/Framework/Assert/Functions.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 18:52:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduge765/public_html/2021-2022/vendor/composer/../phpunit/phpunit/src/Framework/Assert/Functions.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php(61): composerRequire91546f85509c82b88b9e28b7829ddb4c()
+#1 /home/eduge765/public_html/2021-2022/vendor/autoload.php(7): ComposerAutoloaderInit91546f85509c82b88b9e28b7829ddb4c::getLoader()
+#2 /home/eduge765/public_html/2021-2022/public/index.php(34): require('/home/eduge765/...')
+#3 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:18:00 UTC] PHP Warning:  require(/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:18:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php(61): composerRequire91546f85509c82b88b9e28b7829ddb4c()
+#1 /home/eduge765/public_html/2021-2022/vendor/autoload.php(7): ComposerAutoloaderInit91546f85509c82b88b9e28b7829ddb4c::getLoader()
+#2 /home/eduge765/public_html/2021-2022/public/index.php(34): require('/home/eduge765/...')
+#3 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:22:34 UTC] PHP Warning:  require(/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:22:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php(61): composerRequire91546f85509c82b88b9e28b7829ddb4c()
+#1 /home/eduge765/public_html/2021-2022/vendor/autoload.php(7): ComposerAutoloaderInit91546f85509c82b88b9e28b7829ddb4c::getLoader()
+#2 /home/eduge765/public_html/2021-2022/public/index.php(34): require('/home/eduge765/...')
+#3 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:22:39 UTC] PHP Warning:  require(/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:22:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php(61): composerRequire91546f85509c82b88b9e28b7829ddb4c()
+#1 /home/eduge765/public_html/2021-2022/vendor/autoload.php(7): ComposerAutoloaderInit91546f85509c82b88b9e28b7829ddb4c::getLoader()
+#2 /home/eduge765/public_html/2021-2022/public/index.php(34): require('/home/eduge765/...')
+#3 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:22:59 UTC] PHP Warning:  require(/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:22:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php(61): composerRequire91546f85509c82b88b9e28b7829ddb4c()
+#1 /home/eduge765/public_html/2021-2022/vendor/autoload.php(7): ComposerAutoloaderInit91546f85509c82b88b9e28b7829ddb4c::getLoader()
+#2 /home/eduge765/public_html/2021-2022/public/index.php(34): require('/home/eduge765/...')
+#3 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:23:02 UTC] PHP Warning:  require(/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:23:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduge765/public_html/2021-2022/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php(61): composerRequire91546f85509c82b88b9e28b7829ddb4c()
+#1 /home/eduge765/public_html/2021-2022/vendor/autoload.php(7): ComposerAutoloaderInit91546f85509c82b88b9e28b7829ddb4c::getLoader()
+#2 /home/eduge765/public_html/2021-2022/public/index.php(34): require('/home/eduge765/...')
+#3 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/composer/autoload_real.php on line 71
+[16-Aug-2021 19:28:17 UTC] PHP Warning:  include(/home/eduge765/public_html/2021-2022/vendor/composer/../vlucas/phpdotenv/src/Repository/RepositoryBuilder.php): Failed to open stream: No such file or directory in /home/eduge765/public_html/2021-2022/vendor/composer/ClassLoader.php on line 478
+[16-Aug-2021 19:28:17 UTC] PHP Warning:  include(): Failed opening '/home/eduge765/public_html/2021-2022/vendor/composer/../vlucas/phpdotenv/src/Repository/RepositoryBuilder.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/eduge765/public_html/2021-2022/vendor/composer/ClassLoader.php on line 478
+[16-Aug-2021 19:28:17 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php:836
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php(836): ReflectionClass->__construct()
+#1 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php(717): Illuminate\Container\Container->build()
+#2 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve()
+#3 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php(655): Illuminate\Foundation\Application->resolve()
+#4 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make()
+#5 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php(1368): Illuminate\Foundation\Application->make()
+#6 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet()
+#7 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\Log\LogManager->error()
+#10 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(414): Illuminate\Foundation\Exceptions\Handler->report()
+#11 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException()
+#12 /home/eduge765/public_html/2021-2022/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#13 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php:838
+Stack trace:
+#0 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php(717): Illuminate\Container\Container->build()
+#1 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve()
+#2 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php(655): Illuminate\Foundation\Application->resolve()
+#3 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make()
+#4 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php(1368): Illuminate\Foundation\Application->make()
+#5 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet()
+#6 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\Log\LogManager->error()
+#9 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(414): Illuminate\Foundation\Exceptions\Handler->report()
+#10 /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException()
+#11 /home/eduge765/public_html/2021-2022/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 {main}
+  thrown in /home/eduge765/public_html/2021-2022/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 838
+[21-Oct-2021 13:24:08 America/Montreal] PHP Fatal error:  Can't use function return value in write context in /home/eduge765/public_html/2021-2022/app/Http/Controllers/PlanningController.php on line 41

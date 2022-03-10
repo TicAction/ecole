@@ -55,6 +55,7 @@
                                             <option value="Français Écriture">Français Écriture</option>
                                             <option value="Français Expression Orale">Français Expression Orale</option>
                                             <option value="Univers Social">Univers Social</option>
+                                            <option value="Anglais">Anglais</option>
                                         </select>
                                     </div>
                                 </div>

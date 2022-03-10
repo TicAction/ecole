@@ -25,7 +25,7 @@ class Archives extends Component
      */
     public function render()
     {
-        $studies = Study::where('end_date','<', date("Y-m-d"))->get();
+        $studies = Study::where('end_date','<=', date("Y-m-d"))->get();
 
         return view('components.archives',compact('studies'));
     }

@@ -22,7 +22,7 @@
         <div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Nom de famille</strong>
+                    <strong>Prénom</strong>
                     <input type="text" name="firstname" class="form-control" placeholder="" value="{{$kid->firstname}}">
                 </div>
             </div>
@@ -30,7 +30,7 @@
         <div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Prénom</strong>
+                    <strong>Nom de famille</strong>
                     <input type="text" name="lastname" class="form-control" placeholder="" value="{{$kid->lastname}}">
                 </div>
             </div>

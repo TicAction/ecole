@@ -2,7 +2,7 @@
 
 <div class="card">
     <div class="card-body">
-        <h1 class="text-center">Liste des évaluations à venir</h1>
+        <h1 class="text-center">Description de l'évaluation</h1>
         <table class="table table-striped">
             <tr>
                 <th>Date prévue</th>
