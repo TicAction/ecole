@@ -9,26 +9,22 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-Je suis le  meilleur
+
     <table class="table">
 
         <tr>
-            <td>{{$kid->FullName}}</td>
+            <td><div class="text-2xl text-center">{{$kid->FullName}}</div></td>
         </tr>
 
     </table>
                     @foreach($kid->observation as $k)
-                        <table>
+                        <table width="100%">
                             <tr>
-                                <td style="color:blue;"> {{Carbon\Carbon::parse($k->observation_date)->translatedFormat('d-F')}}</td>
+                                <td style="color:blue;" width="25%"> {{Carbon\Carbon::parse($k->observation_date)->translatedFormat('d-F')}}</td>
+                                <td>  {{$k->content}}</td>
                             </tr>
 
-                            <tr>
-                                <td>
-                                    <br>
-                                   {{$k->content}}
-                                </td>
-                            </tr>
+
                         </table>
                         <hr>
 
@@ -37,30 +33,17 @@ Je suis le  meilleur
 
 
 
-                    @foreach($kid->homeworks as $hw)
-                     <div class="text-1xl" style="color:blue;">{{$hw->name}} // {{Carbon\Carbon::parse($hw->date_ask)->translatedFormat('d-F')}}
-                         </div>
-                        <table>
-                            <tr>
-                                @if($hw->status === 'Non Fait')
-                                <td>
-                                    <div style="color:red;">{{$hw->status}}</div>
 
-                                </td>
-                                    @elseif($hw->status === 'Fait')
-                                    <td>
-                                        <div style="color:teal;">{{$hw->status}}</div>
+                   @foreach($kid->homeworks as $homework)
+                    <table width="100%">
+                        <tr>
+                            <td width="25%"> {{$homework->homework_name}}</td>
+                            <td width="75%">[ {{$homework->pivot->signature}} ]</td>
+                        </tr>
 
-                                    </td>
-                                    @else
-                                    <td>
-                                        <div>{{$hw->status}}</div>
+                    </table>
 
-                                    </td>
-                                    @endif
-                            </tr>
-                        </table>
-                        @endforeach
+                       @endforeach
                     <br>
                     <a href="{{url('kid')}}"><button class="btn btn-success">Retour</button></a>
                 </div>

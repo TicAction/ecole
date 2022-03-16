@@ -21,13 +21,8 @@ class Kid extends Model
     }
     public function homeworks()
     {
-        return $this->hasMany(Homework::class);
+        return $this->belongsToMany(Homework::class)->withPivot('signature');
     }
-//    public function results()
-//    {
-//        return $this->belongsToMany(
-//            Result::class, 'homework_kid_results'
-//        );
-//    }
+
 
 }
