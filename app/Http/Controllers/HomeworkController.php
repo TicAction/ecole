@@ -28,7 +28,8 @@ class HomeworkController extends Controller
      */
     public function create()
     {
-        $kids= Kid::orderBy('lastname')->get();
+        $homework = Homework::with('Kids','Achivements')->get();
+        dd($homework);
         return view('homeworks.create',compact('kids'));
     }
 
@@ -40,15 +41,21 @@ class HomeworkController extends Controller
      */
     public function store(Request $request)
     {
-        $homework = Homework::create([
-            'homework_name'=>$request->input('homework_name'),
-            'homework_date'=>$request->input('homework_date'),
-        ]);
 
-        $kids = collect($request->input('kid',[]))->map(function($kid){
-            return ['signature' => $kid];
-        });
-        $homework->kids()->sync($kids);
+        $homework = Homework::create($request->all());
+        dd($homework);
+
+
+
+//        $homework = Homework::create([
+//            'homework_name'=>$request->input('homework_name'),
+//            'homework_date'=>$request->input('homework_date'),
+//        ]);
+//
+//        $kids = collect($request->input('kid',[]))->map(function($kid){
+//            return ['signature' => $kid];
+//        });
+//        $homework->kids()->sync($kids);
 
 
             return back();

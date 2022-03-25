@@ -11,9 +11,18 @@ class Homework extends Model
     protected $guarded = [];
 
 
-    public function Kids()
+//    public function Kids()
+//    {
+//        return $this->belongsToMany(Kid::class)->withPivot('signature');
+//    }
+
+    public function kids()
     {
-        return $this->belongsToMany(Kid::class)->withPivot('signature');
+        return $this->belongsToMany(Kid::class, 'achivement_homework_kid');
+    }
+    public function achivements()
+    {
+        return $this->belongsToMany(Achivement::class, 'achivement_homework_kid');
     }
 
 }

@@ -19,10 +19,18 @@ class Kid extends Model
     {
         return "{$this->firstname} {$this->lastname}";
     }
+//    public function homeworks()
+//    {
+//        return $this->belongsToMany(Homework::class)->withPivot('signature');
+//    }
+
     public function homeworks()
     {
-        return $this->belongsToMany(Homework::class)->withPivot('signature');
+        return $this->belongsToMany(Homework::class, 'achivement_homework_kid');
     }
-
+    public function achivements()
+    {
+        return $this->belongsToMany(Achivement::class, 'achivement_homework_kid');
+    }
 
 }

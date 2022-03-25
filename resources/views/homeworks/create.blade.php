@@ -40,14 +40,17 @@
                                     <td width="25%">Nom de l'élève</td>
                                     <td>Non fait/fait</td>
                                 </tr>
-                                @foreach($kids as $kid)
+{{--                                @foreach($kids as $kid)--}}
                                 <tr>
-                                    <td><input type="text" value="{{$kid->fullname}}" name="kid->id[]"}}></td>
+                                    <td><input type="text" value="" name="kid->id[]"}}></td>
                                     <td>
-                                        <input name="kid[{{$kid->id}}]" type='text' class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                        <input name="achivement[{{$kid->id}}]" type='text' class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+
                                     </td>
                                 </tr>
-                                @endforeach
+{{--                                @endforeach--}}
+
+
                             </table>
                                 <hr>
 
