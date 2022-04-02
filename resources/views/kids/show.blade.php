@@ -37,8 +37,9 @@
                    @foreach($kid->homeworks as $homework)
                     <table width="100%">
                         <tr>
+
                             <td width="25%"> {{$homework->homework_name}}</td>
-                            <td width="75%">[ {{$homework->pivot->signature}} ]</td>
+                            <td width="75%">[ {{$homework->pivot->sign}} ]</td>
                         </tr>
 
                     </table>

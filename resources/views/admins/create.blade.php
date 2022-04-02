@@ -17,7 +17,7 @@
             </div>
         @endif
 
-<form action="{{url('admin')}}" method="POST">
+<form action="{{url('admins')}}" method="POST">
     @csrf
     @method('POST')
     <div class="row row-cols-4">

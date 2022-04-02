@@ -67,6 +67,7 @@ class KidController extends Controller
 
     }
 
+
     /**
      * Update the specified resource in storage.
      *
@@ -88,7 +89,9 @@ class KidController extends Controller
      */
     public function destroy(Kid $kid)
     {
+
         $kid->delete();
+        $kid->homeworks()->detach();
         return redirect('kid')->with('success', "L'élève a bien été effacé");
     }
 }

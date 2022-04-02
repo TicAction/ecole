@@ -5,7 +5,7 @@
     @foreach($studies as $studie)
 
 
-    <h3 class="text-center" style="background-color: #cbd5e0">Travaux du  {{Carbon\Carbon::parse($studie->start_date)->translatedFormat('d F')}} au  {{Carbon\Carbon::parse($studie->end_date)->translatedFormat('d F')}}</h3>
+    <h3 class="text-center" style="background-color: #cbd5e0">Travaux du  {{Carbon\Carbon::parse($studie->start_date)->translatedFormat('l d F')}} au  {{Carbon\Carbon::parse($studie->end_date)->translatedFormat('l d F')}}</h3>
 
         <table class="table ">
 
@@ -43,8 +43,10 @@
                 <td>{{$studie->science}}</td>
         </tr>
         <tr>
+
                 <th>Anglais:</th>
                 <td>{{$studie->english}}</td>
+
         </tr>
             <tr>
             <tr>

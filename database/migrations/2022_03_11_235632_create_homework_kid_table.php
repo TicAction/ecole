@@ -14,9 +14,9 @@ class CreateHomeworkKidTable extends Migration
     public function up()
     {
         Schema::create('homework_kid', function (Blueprint $table) {
-            $table->foreignId('kid_id')->constrained();
-            $table->foreignId('homework_id')->constrained();
-            $table->string('signature');
+            $table->foreignId('kid_id')->references('id')->on('kids')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('homework_id')->references('id')->on('homeworks')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('sign');
         });
     }
 

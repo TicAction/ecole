@@ -27,7 +27,7 @@
                             <tr>
                                 <td>{{$studie->week}}</td>
                                 <td>Du
-                                    {{Carbon\Carbon::parse($studie->start_date)->translatedFormat('d-F')}}
+                                    {{Carbon\Carbon::parse($studie->start_date)->translatedFormat('d-F')}} //
                                    Au
                                     {{Carbon\Carbon::parse($studie->end_date)->translatedFormat('d-F')}}
                                 </td>
@@ -53,6 +53,7 @@
 
                         @endforeach
                     </table>
+
                 </div>
             </div>
         </div>

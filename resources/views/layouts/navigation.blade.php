@@ -10,40 +10,53 @@
                     </a>
                 </div>
 
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('admins.index')" :active="request()->routeIs('admins.index')">
-                        {{ __('Accueil') }}
-                    </x-nav-link>
-                </div>
+{{--                <!-- Navigation Links -->--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('admins.index')" :active="request()->routeIs('admins.index')">--}}
+{{--                        {{ __('Accueil') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('admins.create')" >
-                        {{ __('Création') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('exam.index')" >
-                        {{ __('Liste des évaluations') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('exam.create')" >
-                        {{ __('Nouvelle évaluation') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('kid.index')" >
-                        {{ __('Liste des élèves') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('observation.create')" >
-                        {{ __('Nouvelle observation') }}
-                    </x-nav-link>
-                </div>
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('admins.create')" >--}}
+{{--                        {{ __('Création') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('exam.index')" >--}}
+{{--                        {{ __('Liste des évaluations') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('exam.create')" >--}}
+{{--                        {{ __('Nouvelle évaluation') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('kid.index')" >--}}
+{{--                        {{ __('Liste des élèves') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('observation.create')" >--}}
+{{--                        {{ __('Nouvelle observation') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
 
-            </div>
+
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('homework.index')" >--}}
+{{--                        {{ __('Liste des travaux') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
+
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('homework.create')" >--}}
+{{--                        {{ __('Remise de travaux') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
+
+{{--            </div>--}}
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">

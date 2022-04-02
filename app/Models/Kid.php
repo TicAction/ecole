@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Homework;
 
 class Kid extends Model
 {
@@ -21,7 +20,7 @@ class Kid extends Model
     }
     public function homeworks()
     {
-        return $this->belongsToMany(Homework::class)->withPivot('signature');
+        return $this->belongsToMany(Homework::class)->withPivot('sign');
     }
 
 

@@ -16,48 +16,65 @@
                                 </ul>
                             </div>
                         @endif
-                <div class="text-xl-center text-2xl">Modifier l'observation de {{$observation->kid->FullName}}</div>
-                        <form action="{{route('observation.store')}}" method="POST">
+
+                        <form action="{{route('homework.update',$homework->id)}}" method="POST" >
                             @csrf
-                            @method('POST')
-                            <input type="hidden" name="kid_id" value="{{$observation->kid->id}}">
-                            <div>
-                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <strong>Date de l'observation</strong>
-                                        <input type="date" name="observation_date" class="form-control" value="{{date('Y-m-d')}}">
-                                    </div>
+                            @method('PUT')
+                            <div class="row mb-3">
+                                <div class="form-group col-5">
+                                    <label for="homework_name" class="form-label">Nom du travail</label>
 
-                                    <div class="form-group">
-                                        <strong>Période de la journée</strong>
-                                        <select name="period" id="period" class="form-control">
-                                            <option value="{{$observation->period}}">Période {{$observation->period}}</option>
-                                            <option value="1">Période 1</option>
-                                            <option value="2">Période 2</option>
-                                            <option value="3">Période 3</option>
-                                            <option value="4">Période 4</option>
-                                            <option value="5">Période 5</option>
-                                        </select>
-                                    </div>
+                                    <input type="text" name="homework_name" class="form-control" value="{{$homework->homework_name}}">
                                 </div>
-                            </div>
 
+                                <div class="col-5">
+                                    <label for="homework_name" class="form-label">date du travail</label>
 
-
-                            <div>
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <div class="form-group">
-                                        <strong>Obsevation</strong>
-                                        <textarea class="form-control" name="content" id="" cols="125" rows="10" placeholder="Écrire une courte description">{{$observation->content}}</textarea>
-                                    </div>
+                                    <input type="date" name="homework_date" class="form-control" value="{{$homework->homework_date->format('Y-m-d')}}">
                                 </div>
+
                             </div>
+                            <hr>
+                            <table width="100%" class="table-striped table-sm">
+                                <tr>
+                                    <td width="25%">Nom de l'élève</td>
+
+                                </tr>
+                                @foreach($kids as $kid)
 
 
-                            <div class="col-xs-12 col-sm-12 col-md-12 text-center pt-3">
+                                    <tr>
+                                        <td><input type="text" value="{{$kid->fullname}}" name="kid->id[]"}} class="border-0"></td>
+                                        <td>
 
-                                <button type="submit" class="btn btn-primary" > Soumettre </button>
-                            </div>
+                                            @foreach($kid->homeworks as $khs)
+                                                    @if($khs->pivot->homework_id == $homework->id)
+
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" name="kid[{{$kid->id}}]" type="radio" id="inlineCheckbox1" value="Oui" {{($khs->pivot->sign==="Oui")? "checked":""}}>
+                                                    <label class="form-check-label" for="inlineCheckbox1">Oui</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" name="kid[{{$kid->id}}]" type="radio" id="inlineCheckbox2" value="Non" {{($khs->pivot->sign==="Non")? "checked":""}}>
+                                                    <label class="form-check-label" for="inlineCheckbox2">Non</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" name="kid[{{$kid->id}}]" type="radio" id="inlineCheckbox3" value="Incomplet" {{($khs->pivot->sign==="Incomplet")? "checked":""}}>
+                                                    <label class="form-check-label" for="inlineCheckbox3">Incomplet</label>
+                                                </div>
+
+                                                    @endif
+                                            @endforeach
+
+
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </table>
+                            <hr>
+
+                            <button type="submit" class="btn btn-primary mt-lg-3" > Soumettre </button>
+
 
                         </form>
 

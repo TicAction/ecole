@@ -30,10 +30,20 @@
             </header>
 
 
-            <main>
+                <div class="container mt-3" >
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <x-sidebar>
 
-                {{ $slot }}
-            </main>
+                            </x-sidebar>
+                        </div>
+
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            {{ $slot}}
+                        </div>
+
+
+                        </div>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>

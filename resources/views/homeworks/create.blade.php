@@ -38,13 +38,37 @@
                             <table width="100%" class="table-striped table-sm">
                                 <tr>
                                     <td width="25%">Nom de l'élève</td>
-                                    <td>Non fait/fait</td>
+
                                 </tr>
                                 @foreach($kids as $kid)
                                 <tr>
-                                    <td><input type="text" value="{{$kid->fullname}}" name="kid->id[]"}}></td>
+                                    <td><input type="text" value="{{$kid->fullname}}" name="kid->id[]"}} class="border-0"></td>
                                     <td>
-                                        <input name="kid[{{$kid->id}}]" type='text' class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+{{--                                        <input name="kid[{{$kid->id}}]" type='text' class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">--}}
+{{--                                        <select class="form-select" multiple aria-label="multiple select example" name="kid[{{$kid->id}}]">--}}
+
+{{--                                            <option selected value="Oui">Oui</option>--}}
+{{--                                            <option value="Non">Non</option>--}}
+{{--                                            <option value="Incomplet">Incomplet</option>--}}
+{{--                                        </select>--}}
+
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="kid[{{$kid->id}}]" type="radio" id="inlineCheckbox1" value="Oui">
+                                            <label class="form-check-label" for="inlineCheckbox1">Oui</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="kid[{{$kid->id}}]" type="radio" id="inlineCheckbox2" value="Non" checked>
+                                            <label class="form-check-label" for="inlineCheckbox2">Non</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" name="kid[{{$kid->id}}]" type="radio" id="inlineCheckbox3" value="Incomplet" >
+                                            <label class="form-check-label" for="inlineCheckbox3">Incomplet</label>
+                                        </div>
+
+
+
+
                                     </td>
                                 </tr>
                                 @endforeach

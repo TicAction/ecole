@@ -13,13 +13,43 @@
 
                   @include('include/message')
                     <h1 class="text-center text-2xl">Liste des Travaux</h1>
-                   @foreach($homeworks as $homework)
-                      {{$homework->homework_name}}
-                       <hr>
-                    @foreach($homework->kids as $kid )
-                       {{$kid->fullname}} {{$kid->pivot->signature}}
+
+                    <table width="100%">
+                        <tr>
+                            <th>Nom du travail</th>
+                            <th>Date de remise</th>
+                            <th>Modifier</th>
+                            <th>Voir</th>
+                            <th>Effacer</th>
+                        </tr>
+                        @foreach($homeworks as $homework)
+                        <tr>
+                            <td> {{$homework->homework_name}}</td>
+                            <td>{{$homework->homework_date->format('Y-m-d')}}</td>
+                            <td>
+                                <button class="btn btn-primary"><a href="{{route('homework.edit',$homework->id)}}">Éditer</a></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary"><a href="{{route('homework.edit',$homework->id)}}">Voir</a></button>
+                            </td>
+                            <td>
+
+                                <form action="{{ route('homework.destroy',$homework->id) }}" method="POST">
+
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Suprimer</button>
+                                </form>
+
+                            </td>
+                        </tr>
                         @endforeach
-                       @endforeach
+                    </table>
+
+
+
+
+
                 </div>
             </div>
         </div>

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Homework;
 use App\Models\Kid;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class HomeworkController extends Controller
 {
@@ -16,6 +15,7 @@ class HomeworkController extends Controller
      */
     public function index()
     {
+
         $homeworks = Homework::with('kids')->get();
 
         return view ('homeworks.index', compact('homeworks'));
@@ -46,12 +46,12 @@ class HomeworkController extends Controller
         ]);
 
         $kids = collect($request->input('kid',[]))->map(function($kid){
-            return ['signature' => $kid];
+            return ['sign' => $kid];
         });
         $homework->kids()->sync($kids);
 
 
-            return back();
+            return redirect('homework');
     }
 
 
@@ -65,7 +65,7 @@ class HomeworkController extends Controller
      */
     public function show(Homework $homework)
     {
-        //
+        return view('homeworks.show',compact('homework'));
     }
 
     /**
@@ -76,7 +76,8 @@ class HomeworkController extends Controller
      */
     public function edit(Homework $homework)
     {
-        //
+        $kids= Kid::orderBy('lastname')->get();
+        return view('homeworks.edit',compact('homework','kids'));
     }
 
     /**
@@ -88,7 +89,18 @@ class HomeworkController extends Controller
      */
     public function update(Request $request, Homework $homework)
     {
-        //
+        $homework->update([
+            'homework_name'=>$request->input('homework_name'),
+            'homework_date'=>$request->input('homework_date'),
+        ]);
+
+        $kids = collect($request->input('kid',[]))->map(function($kid){
+            return ['sign' => $kid];
+        });
+        $homework->kids()->sync($kids);
+
+
+        return redirect('homework');
     }
 
     /**
@@ -99,6 +111,9 @@ class HomeworkController extends Controller
      */
     public function destroy(Homework $homework)
     {
-        //
+            $homework->delete();
+           $homework->kids()->detach();
+
+        return redirect('homework')->with('success', "Le travail a bien été effacé");
     }
 }

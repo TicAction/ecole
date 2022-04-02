@@ -13,7 +13,7 @@ class AdminController extends Controller
 
     public function index()
     {
-        $studies = Study::get();
+        $studies = Study::all();
 
 
         return view('admins.index', compact('studies'));
@@ -42,7 +42,7 @@ class AdminController extends Controller
 
         study::create($request->all());
 
-        return redirect()->route('admin.index')->with('message','La création a bien été fait');
+        return redirect()->route('admins.index')->with('message','La création a bien été fait');
     }
 
     /**
@@ -84,7 +84,7 @@ class AdminController extends Controller
 
         $study->update($request->except(['_token','_method']));
 
-        return redirect()->route('admin.index')->with('success', 'La modification a été fait avec succés');
+        return redirect()->route('admins.index')->with('success', 'La modification a été fait avec succés');
     }
 
     /**
@@ -97,6 +97,6 @@ class AdminController extends Controller
     {
         $study=$admin;
         $study->delete();
-        return redirect()->route('admin.index')->with('success', 'La feuille de devoir a bien été supprimer');
+        return redirect()->route('admins.index')->with('success', 'La feuille de devoir a bien été supprimer');
     }
 }

@@ -3,9 +3,8 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
-use App\Models\Study;
 
-class Archives extends Component
+class Sidebar extends Component
 {
     /**
      * Create a new component instance.
@@ -14,8 +13,7 @@ class Archives extends Component
      */
     public function __construct()
     {
-
-
+        //
     }
 
     /**
@@ -25,8 +23,6 @@ class Archives extends Component
      */
     public function render()
     {
-        $studies = Study::where('end_date','<=', date("Y-m-d"))->paginate(10);
-
-        return view('components.archives',compact('studies'));
+        return view('components.sidebar');
     }
 }

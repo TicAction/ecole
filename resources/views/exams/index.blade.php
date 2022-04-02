@@ -17,7 +17,7 @@
                         </div>
                     @endif
 
-                    <h1 class="text-center">Liste des évaluation de l'année</h1>
+                    <h1 class="text-center text-2xl">Liste des évaluation de l'année</h1>
                     <table class="table table-striped">
                         <tr>
                             <th>Date prévue</th>
@@ -31,8 +31,8 @@
                         </tr>
                         @foreach($exams as $exam)
                             <tr>
-                                <td>{{Carbon\Carbon::parse($exam->date_exam)->translatedFormat('d-F-Y')}}</td>
-                                <td>{{Carbon\Carbon::parse($exam->created_at)->translatedFormat('d-F-Y')}}</td>
+                                <td>{{Carbon\Carbon::parse($exam->date_exam)->translatedFormat('l d-F-Y')}}</td>
+                                <td>{{Carbon\Carbon::parse($exam->created_at)->translatedFormat('l d-F-Y')}}</td>
                                 <td>{{$exam->name}}</td>
                                 <td>{{$exam->notion}}</td>
                                 <td>{{$exam->manuel}}</td>

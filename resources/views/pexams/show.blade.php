@@ -13,7 +13,7 @@
             </tr>
 
             <tr>
-                <td>{{Carbon\Carbon::parse($exam->date_exam)->translatedFormat('d F Y')}}</td>
+                <td>{{Carbon\Carbon::parse($exam->date_exam)->translatedFormat('l d F Y')}}</td>
                 <td>{{$exam->name}}</td>
                 <td>{{$exam->notion}}</td>
                 <td>{{$exam->manuel}}</td>

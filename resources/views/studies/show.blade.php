@@ -1,7 +1,7 @@
 <x-main>
 <div class="card">
     <div class="card-body">
-        <h3 class="text-center" style="background-color: #cbd5e0">Travaux du  {{Carbon\Carbon::parse($study->start_date)->translatedFormat('d F ')}}  au  {{Carbon\Carbon::parse($study->end_date)->translatedFormat('d F')}}</h3>
+        <h3 class="text-center" style="background-color: #cbd5e0">Travaux du  {{Carbon\Carbon::parse($study->start_date)->translatedFormat('l d F ')}}  au  {{Carbon\Carbon::parse($study->end_date)->translatedFormat('l d F')}}</h3>
 
         <table class="table" >
 
