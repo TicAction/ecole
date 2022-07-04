@@ -19,7 +19,7 @@ class StudyController extends Controller
     public function index()
     {
 
-        $studies = Study::where([['start_date','<=', date('Y/m/d')] ,['end_date','>',date('Y/m/d')],['publish','=','on']])->get();
+        $studies = Study::where([['start_date','<=', date('Y/m/d')] ,['end_date','>',date('Y/m/d')],['publish','=','on'],['group','=','3R1']])->get();
 
 
         return view('studies.index', compact('studies'));

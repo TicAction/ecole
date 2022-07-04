@@ -43,7 +43,7 @@
                                 </td>
                                 <td>
 
-                                    <input type="checkbox" {{$studie->publish === 'on'? 'checked' : ''}}
+                                    <input type="checkbox"{{$studie->publish === 'on'? 'checked' : ''}}
 
 
                                 </td>
@@ -58,4 +58,7 @@
             </div>
         </div>
     </div>
+
+
+
 </x-app-layout>

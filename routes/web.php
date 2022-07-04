@@ -25,5 +25,6 @@ Route::resource('exam','ExamController')->middleware('auth');
 Route::resource('kid','KidController')->middleware('auth');
 Route::resource('observation','ObservationController')->middleware('auth');
 Route::resource('homework','HomeworkController')->middleware('auth');
+Route::resource('plan','PlanController')->middleware('auth');
 require __DIR__.'/auth.php';
 
